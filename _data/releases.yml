@@ -1,0 +1,12 @@
+releases:
+  "v1_1_0":
+    "Getting Started":
+      - "quick-start"
+      - "installation"
+    "HowTo's":
+      - "channels"
+      - "upgrade-to-a-newer-version"
+    "Miscellaneous":
+      - "troubleshooting"
+      - "faq"
+      - "known-issues"

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="-1" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<title>Create Channels</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Roboto|Inconsolata|Lato|Raleway' rel='stylesheet' type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href='/concept-pub-docs/assets/boddhi/css/animate.css' rel='stylesheet' type='text/css'>
+	<link href='/concept-pub-docs/assets/boddhi/css/hover.css' rel='stylesheet' type='text/css'>
+	<link href='/concept-pub-docs/assets/boddhi/css/style.css' rel="stylesheet" media="all">
+	<link href='/concept-pub-docs/assets/boddhi/css/boddhi.links.css' rel="stylesheet" media="all">
+	<link rel="stylesheet" href="/concept-pub-docs/assets/boddhi/snippet/jquery.snippet.css" media="all">
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<div class="logo animated bounceIn"><a class="logo_link hvr-grow-rotate" href="/concept-pub-docs/">Concept API</a></div>
+
+
+<a class="accordionTitle" href="javascript:void(0)">V1.1.0</a>
+
+<div class="accordionContent" id="v1_1_0" data-latest="true">
+    
+        
+        <nav class="nav-global">
+            <ul>
+                <li style="color: #2980B9; font-size: 1.2em; font-family: 'Raleway'">Getting Started</li>
+                
+                
+                
+
+                
+                
+                
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class=""><a class="menu_link" href="/concept-pub-docs/v1_1_0-docs/quick-start/">Quick Start</a></li>
+                
+                
+                
+                
+
+                
+                
+                
+
+                
+                
+                
+                
+                
+                
+                <li class=""><a class="menu_link" href="/concept-pub-docs/v1_1_0-docs/installation/">Installation</a></li>
+                
+                
+            </ul>
+        </nav>
+        
+        <nav class="nav-global">
+            <ul>
+                <li style="color: #2980B9; font-size: 1.2em; font-family: 'Raleway'">HowTo's</li>
+                
+                
+                
+
+                
+                
+                
+
+                
+                
+                <li class="active"><a class="menu_link" href="/concept-pub-docs/v1_1_0-docs/channels/">Create Channels</a></li>
+                
+                
+                
+                
+
+                
+                
+                
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class=""><a class="menu_link" href="/concept-pub-docs/v1_1_0-docs/upgrade-to-a-newer-version/">Upgrade to a newer version</a></li>
+                
+                
+            </ul>
+        </nav>
+        
+        <nav class="nav-global">
+            <ul>
+                <li style="color: #2980B9; font-size: 1.2em; font-family: 'Raleway'">Miscellaneous</li>
+                
+                
+                
+
+                
+                
+                
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class=""><a class="menu_link" href="/concept-pub-docs/v1_1_0-docs/troubleshooting/">Troubleshooting</a></li>
+                
+                
+                
+                
+
+                
+                
+                
+
+                
+                
+                
+                
+                <li class=""><a class="menu_link" href="/concept-pub-docs/v1_1_0-docs/faq/">FAQ</a></li>
+                
+                
+                
+                
+
+                
+                
+                
+
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class=""><a class="menu_link" href="/concept-pub-docs/v1_1_0-docs/known-issues/">Known Issues</a></li>
+                
+                
+            </ul>
+        </nav>
+        
+    </div>
+    
+
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				
+				<nav class="menu cl-effect-14" id="cl-effect-14">
+					<a href="/concept-pub-docs/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/concept-pub-docs/release/">Releases</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/concept-pub-docs/roadmap/">Roadmap</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/concept-pub-docs/help/">Help</a>
+				</nav>
+				
+				<div class="entry-content">
+					<article class="unit-article layout-page">
+						<div class="unit-inner unit-article-inner">
+							<section class="content link-flip">
+								<header>
+									<div class="unit-head">
+										<div class="unit-inner unit-head-inner">
+											<h1 class="h2 entry-title">Create Channels</h1>
+										</div><!-- unit-inner -->
+									</div><!-- unit-head -->
+								</header>
+
+								<div class="bd">
+									<div class="entry-content">
+										<p>Channels provide means to organize content into a single stream. The News interface, for example, provides different channels grouped by document category. We show news for business, economics, science, sports, etc.
+Channels can be created/updated via <code>POST/PUT</code> request to the <code>/channels</code> endpoint, providing a JSON payload in the request body.</p>
+
+<h2 id="channel-object">Channel object</h2>
+
+<p>In order to understand how to build the JSON, you need to understand a bit more how the channels are represented in RDF. A channel in the JSON format has the following properties:</p>
+
+<ul>
+  <li>uri - the instance id of the channel, must be a URI in order to map additional properties to it, such as name and index</li>
+  <li>name - channel name (this string will be shown in the interface). To name a channel use the predicate <code>http://ontology.ontotext.com/publishing#hasName</code>.</li>
+  <li>index - the order in the list of channels shown in the UI. To map an index to a channel use the predicate <code>http://ontology.ontotext.com/publishing#hasIndex</code></li>
+  <li>concepts - the document should contain all of the concepts in this list</li>
+  <li>features - the document should have all the features with the values from the list</li>
+  <li>categories - the document should have any of those categories. The categories values could be either a URI or a Literal and should be declared with the predicate <code>http://ontology.ontotext.com/publishing#hasCategory</code></li>
+</ul>
+
+<h2 id="example">Example</h2>
+
+<p>The following can be used to creates channels grouped by document category:</p>
+
+<pre>
+```
+[
+    {
+        "uri": "http://www.ontotext.com/publishing#International",
+        "name": "International",
+        "index": 0,
+        "categories": [
+          "International"
+        ]
+    }, {
+        "uri": "http://www.ontotext.com/publishing#Business",
+        "name": "Business",
+        "index": 1,
+        "categories": [
+          "Business"
+        ]
+    }, {
+        "uri": "http://www.ontotext.com/publishing#ScienceAndTechnology",
+        "name": "Science and Technology",
+        "index": 2,
+        "categories": [
+          "Science and Technology"
+        ]
+    }, {
+        "uri": "http://www.ontotext.com/publishing#Sports",
+        "name": "Sports",
+        "index": 3,
+        "categories": [
+          "Sports"
+        ]
+    }, {
+        "uri": "http://www.ontotext.com/publishing#Lifestyle",
+        "name": "Lifestyle",
+        "index": 4,
+        "categories": [
+          "Lifestyle"
+        ]
+    }
+]
+
+```</pre>
+
+<h2 id="advanced-filtering">Advanced filtering</h2>
+
+<p>Let’s consider the following:</p>
+
+<pre><code>{
+    "uri": "http://www.ontotext.com/publishing#Channel-Musica",
+    "name": "Music",
+    "index": 0,
+    "concepts": [
+         "http://ontology.ontotext.com/resource/Nina_Simone",
+         "http://ontology.ontotext.com/resource/Billie_Holiday"
+     ],
+    "features": [
+        {
+            "uri": "a:featureGenre",
+            "name": "Genre",
+            "value": "Jazz"
+        },
+        {
+            "uri": "a:featureRegion",
+            "name": "Region",
+            "value": "US"
+        }
+    ],
+    "categories": [
+      "Music",
+      "Culture"
+    ]
+}
+</code></pre>
+
+<p>This channel will include documents that satisfy the following requirements:
+* mention both “Nina Simone” and “Billie Holiday”
+* have feature “Genre”:”Jazz” and have feature “Region”:”US”
+* have either category “Music” or “Culture”</p>
+
+									</div><!-- entry-content -->
+								</div><!-- bd -->
+
+							</section><!-- content -->
+						</div><!-- unit-inner -->
+					</article>
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+</div><!-- page -->
+
+<script src="/concept-pub-docs/assets/boddhi/js/jquery-2.1.3.min.js"></script>
+<script src="/concept-pub-docs/assets/boddhi/js/boddhi.easing.js"></script>
+<script src="/concept-pub-docs/assets/boddhi/snippet/jquery.snippet.js"></script>
+
+<script>
+
+/*! A fix for the iOS orientationchange zoom bug.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+
+$(function() {
+
+	$("pre").snippet("javascript", {style:"vim-dark", menu:true, showNum:false, collapse:true, startCollapsed:true});
+
+	$('.accordionTitle').on('click',function(){
+	    $(this).next('.accordionContent').slideToggle(1000, 'easeOutBounce').promise().done(function() {
+	        var vis = $(this).is(':visible') ? 'expanded' : 'collapsed';
+	        localStorage.setItem($(this).attr('id'), vis);
+	    });
+	});
+
+	$('.accordionContent').each(function(i, obj) {
+	    if (localStorage.getItem($(this).attr('id')) == 'expanded' || ($(this).attr('data-latest') == 'true' && localStorage.getItem($(this).attr('id')) == 'expanded')) {
+	    	$(this).show();
+	    } else {
+	    	$(this).hide();
+	    }
+	});
+
+});
+
+
+</script>
+
+</body>
+</html>

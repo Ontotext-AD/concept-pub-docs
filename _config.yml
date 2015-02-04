@@ -1,0 +1,12 @@
+markdown: kramdown
+exclude: [".rvmrc", ".rbenv-version", "Rakefile"]
+title : Concept API
+
+baseurl: /concept-pub-docs
+date: 2015
+author: Ontotext
+ASSET_PATH : assets/boddhi
+
+collections:
+  v1_1_0-docs:
+    output: true

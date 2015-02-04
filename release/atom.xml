@@ -1,0 +1,30 @@
+---
+layout: null
+title : null
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title type="text" xml:lang="en">{{ site.title }}</title>
+    <link type="application/atom+xml" href="{{ site.baseurl }}/atom.xml" rel="self"/>
+    <link href="{{ site.baseurl }}/"/>
+  <updated>{{ site.time | date: "%Y-%m-%d" }}</updated>
+  <id>{{ site.baseurl }}/</id>
+  <author>
+    <name>{{ site.author }}</name>
+  </author>
+  <rights type="text">Copyright © {{ site.time | date: "%Y" }} {{ site.author }}. All rights reserved.</rights>
+  {% for post in site.posts limit:20 %}
+  <entry>
+    <title>{{ post.title | xml_escape }}</title>
+    <author>{{ post.author }}</author>
+    <link rel="alternate" type="text/html" href="{{ site.baseurl }}{{ post.url }}/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign={{ post.title | replace: ',','' | replace: ' ', '' | xml_escape }}" />
+    <published>{{ post.date | date: "%Y-%m-%d" }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>{{ site.baseurl }}{{ post.id }}</id>
+    <content type="html"><![CDATA[ {{ post.content }} ]]></content>
+  </entry>
+  {% endfor %}
+
+</feed>

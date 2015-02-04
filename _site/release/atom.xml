@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title type="text" xml:lang="en">Concept API</title>
+    <link type="application/atom+xml" href="/concept-pub-docs/atom.xml" rel="self"/>
+    <link href="/concept-pub-docs/"/>
+  <updated>2015-02-04</updated>
+  <id>/concept-pub-docs/</id>
+  <author>
+    <name>Ontotext</name>
+  </author>
+  <rights type="text">Copyright © 2015 Ontotext. All rights reserved.</rights>
+  
+  <entry>
+    <title></title>
+    <author>mihailnenov</author>
+    <link rel="alternate" type="text/html" href="/concept-pub-docs/release/2014/12/01/release_v1.0.0.html/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=" />
+    <published>2014-12-01</published>
+    <updated>2014-12-01T00:00:00+02:00</updated>
+    <id>/concept-pub-docs/release/2014/12/01/release_v1.0.0</id>
+    <content type="html"><![CDATA[ <p>Initial release of the Concept API related projects. Includes:</p>
+
+<ul>
+  <li>Concept Data Model</li>
+  <li>Document data model</li>
+  <li>Concept REST API</li>
+</ul>
+
+ ]]></content>
+  </entry>
+  
+
+</feed>

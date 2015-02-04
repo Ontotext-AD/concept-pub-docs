@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Concept API</title>
+    <link></link>
+    
+      <item>
+        <title></title>
+        <author>mihailnenov</author>
+        <pubDate>Mon, 01 Dec 2014 00:00:00 +0200</pubDate>
+        <description>&lt;p&gt;Initial release of the Concept API related projects. Includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Concept Data Model&lt;/li&gt;
+  &lt;li&gt;Document data model&lt;/li&gt;
+  &lt;li&gt;Concept REST API&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      </item>
+    
+  </channel>
+</rss>
